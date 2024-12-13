@@ -6,6 +6,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor
@@ -30,6 +31,9 @@ public class Convention {
 
     @ManyToOne
     private Entreprise entreprise;
+
+    public <E> Convention(int i, String conventionA, int i1, ArrayList<E> es) {
+    }
 
 
     // Getters and setters
